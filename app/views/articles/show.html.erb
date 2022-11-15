@@ -1,9 +1,15 @@
-<h1><%= @article.title %></h1>
-[<%= link_to 'edit', edit_article_path(@article) %>]
-[<%= link_to 'delete', article_path(@article),
-  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-%>]
+<header class="text-center">
+  <h1><%= @article.title %></h1>
+    [<%= link_to 'edit', edit_article_path(@article) %>]
+    [<%= link_to 'delete', article_path(@article),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+    %>]
+</header>
 
-<p><%= @article.content %></p>
 
-<%= link_to 'Back to list', articles_path %>
+<div class="container">
+  <p><%= @article.content %></p>
+</div>
+<footer class="text-center">
+  <%= link_to 'Back to list', articles_path %>
+</footer>

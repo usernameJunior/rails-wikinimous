@@ -1,5 +1,11 @@
-<h1>Edit article</h1>
+<header class="text-center">
+  <h1>Edit article</h1>
+</header>
 
-<%= render "form", article: @article %>
+<div class="container">
+  <%= render "form", article: @article %>
+</div>
 
-<%= link_to 'Back to list', articles_path %>
+<footer class="text-center">
+  <%= link_to 'Back to list', articles_path %>
+</footer>
